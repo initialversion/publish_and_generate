@@ -1,6 +1,6 @@
 ActiveAdmin.register Apple do
 
- permit_params :description
+ permit_params :description, :name
 
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters

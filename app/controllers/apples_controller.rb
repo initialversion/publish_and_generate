@@ -22,6 +22,7 @@ class ApplesController < ApplicationController
     @apple = Apple.new
 
     @apple.description = params[:description]
+    @apple.name = params[:name]
 
     save_status = @apple.save
 
@@ -49,6 +50,7 @@ class ApplesController < ApplicationController
     @apple = Apple.find(params[:id])
 
     @apple.description = params[:description]
+    @apple.name = params[:name]
 
     save_status = @apple.save
 
